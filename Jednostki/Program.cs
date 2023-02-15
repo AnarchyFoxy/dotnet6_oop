@@ -13,3 +13,15 @@ WriteLine(format: "{0} urodziła się w {1:dddd, d MMMM yyyy}",
 
 // Output:
 // Astryda Malinowska urodziła się w Monday, 16 March 1992
+
+Jednostka gazela = new()
+{
+    nazwisko = "Gazela Migała",
+    data_urodzenia = new DateTime(1999, 8, 23)
+};
+
+WriteLine(format: "{0} urodziła się {1:d MMM yy}",
+    arg0: gazela.nazwisko,
+    arg1: gazela.data_urodzenia);
+// Output:
+// Gazela Migała urodziła się 23 Aug 99
